@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProductClientActivity">
+    <LinearLayout
+        android:id="@+id/linearL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:background="@color/app_color">
+            <ImageView
+                android:id="@+id/profileCompany"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:src="@drawable/baseline_person_24"
+                android:layout_marginRight="80dp"
+                ></ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Tunisie Promos"
+                android:fontFamily="@font/dancing_bold"
+                android:textColor="@color/white"
+                android:textSize="25sp"></TextView>
+
+        </LinearLayout></LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="640dp"
+        android:scrollbars="vertical"
+        />
+
+
+
+</LinearLayout>
